@@ -2,7 +2,6 @@
     .profil {
         position: relative;
         left: 500px;
-        top:9px
     }
 }
 
@@ -10,15 +9,14 @@
     .profil {
         position: relative;
         left: 270px;
-        top:9px
     }
 }
 
 @media screen and (max-width: 768px) {
     .profil {
         position: relative;
-        left: 80px;
-        top:9px
+        left: 25px;
+        top: 2px;
     }
 }
 
@@ -28,8 +26,6 @@
     }
     header .container .menu a {
         display: block;
-        margin-top: 17px;
-        margin-bottom: 17px;
     }
     header .container .menu a.about-us,
     header .container .menu a.catalog,
@@ -40,7 +36,7 @@
     .profil {
         position: relative;
         left: 10px;
-        top:10px
+        bottom: 15px;
     }
 
 }
