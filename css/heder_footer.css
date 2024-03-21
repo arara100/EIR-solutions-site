@@ -1,18 +1,18 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.block1 {
+    position: relative;
 }
 
 @font-face {
-    font-family: opensuns;
+    font-family: opensans;
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/7122-fontps.ttf');
-}
-
-.container-fluid {
-    width: 100%;
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf');
 }
 
 .container {
@@ -24,24 +24,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 body {
-    font-family: 'opensans, Arial, Helvetica';
+    font-family: 'opensans', Arial, Helvetica; 
     width: 100%;
     font-size: 16px;
 }
 
-header > .container {
-    padding: 40px 20px;
-    color: aqua;
+header {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure menu appears above iframe */
+    background-color: rgba(209, 209, 209, 0.459); /* Semi-transparent background for better readability */
+    padding: 10px 20px; /* Add padding to the header */
+    width: calc(100% - 40px); /* Adjust width to accommodate padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visual separation */
+    border-radius: 10px;
 }
 
 header .burgericon {
-    width: 40px;
+    width: 27px;
     display: none;
-
 }
 
 header .container .menu a.about-us,
@@ -55,15 +61,16 @@ header .container .menu a.contacts {
     padding-right: 9px;
     border-right: 3px solid rgb(0, 0, 0);
     border-width: 1px;
+    position: relative;
+    bottom: 10px;
+}
+
+header .container .menu a:hover,
+header .container .menu a.map {
+    color: rgb(250, 178, 110);
 }
 
 .profil {
     position: relative;
     left: 640px;
-    top:13px
-}
-
-header .container .menu a:hover,
-header .container .menu a.map {
-    color:rgb(250, 178, 110);
 }
