@@ -23,9 +23,11 @@
 @media screen and (max-width: 576px) {
     header .burgericon {
         display: inline;
+        position: relative;
+        bottom: 2px;
     }
     header .container .menu a {
-        display: block;
+        display: inline;
     }
     header .container .menu a.about-us,
     header .container .menu a.catalog,
@@ -35,8 +37,7 @@
     }
     .profil {
         position: relative;
-        left: 10px;
-        bottom: 15px;
+        left: 360px;
     }
 
 }
