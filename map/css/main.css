@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block1 .menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.125em;
+}
+
+.block1 .menu a:hover {
+    color: rgb(250, 178, 110);
+}
+
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0px;
+}
+
+
+.block1 {
+    display: flex;
+    align-items: center; 
+}
+
+.open {
+    position:relative;
+    top: 300px;
+    right: 70px;
+    z-index: 2;
+    background-color: rgba(185, 183, 183, 0.459);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
