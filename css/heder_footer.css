@@ -36,7 +36,7 @@ body {
 header {
     position: absolute;
     top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
     z-index: 1000; /* Ensure menu appears above iframe */
     background-color: rgba(209, 209, 209, 0.459); /* Semi-transparent background for better readability */
     padding: 10px 20px; /* Add padding to the header */
@@ -44,10 +44,9 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visual separation */
     border-radius: 10px;
 }
-
-header .burgericon {
-    width: 27px;
-    display: none;
+.burgericon {
+    position: relative;
+    bottom: 5px;
 }
 
 header .container .menu a.about-us,
@@ -73,4 +72,9 @@ header .container .menu a.map {
 .profil {
     position: relative;
     left: 640px;
+}
+
+.burgericon-2 {
+    position: relative;
+    bottom: 5px;
 }
