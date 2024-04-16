@@ -1,21 +1,21 @@
 @media screen and (max-width: 1199px) {
     .profil {
         position: relative;
-        left: 500px;
+        left: 800px;
     }
 }
 
 @media screen and (max-width: 991px) {
     .profil {
         position: relative;
-        left: 270px;
+        left: 620px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .profil {
         position: relative;
-        left: 25px;
+        left: 370px;
         top: 2px;
     }
 }
@@ -29,15 +29,9 @@
     header .container .menu a {
         display: inline;
     }
-    header .container .menu a.about-us,
-    header .container .menu a.catalog,
-    header .container .menu a.map,
-    header .container .menu a.contacts {
-        display: none;
-    }
     .profil {
         position: relative;
-        left: 360px;
+        left: 150px;
     }
 
 }
