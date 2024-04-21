@@ -1,0 +1,47 @@
+/* Style for the menu */
+#list {
+  position: fixed;
+  display: none;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  left: 10px;
+  top: 10px;
+}
+
+#list.show-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style for the menu items */
+#list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#list ul li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+#list ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  display: block;
+}
+
+#list ul li a:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.menu-1 {
+  padding: 0;
+  margin: 0;
+}

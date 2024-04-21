@@ -1,0 +1,124 @@
+.burger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; 
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.burger-line + .burger-line {
+    margin-top: 5px;
+}
+
+.burger.active .burger-line:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+}
+
+.burger.active .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 35px;
+    height: 50px;
+    width: 230px;
+    background-color: rgba(217, 217, 217, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tag {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.menu__list {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px; 
+}
+
+
+.location {
+    position: relative;
+    bottom: 59px;
+    left: 190px;
+}
+
+.menu-1 {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    position: relative;
+    bottom: 34px;
+    left: 85px;
+}
+
+#item {
+    text-align: center;
+}
+
+/* Responsive*/
+@media screen and (max-width: 500px) {
+    .menu {
+        width: 100%;
+        left: -100%;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+}

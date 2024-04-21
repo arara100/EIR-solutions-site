@@ -4,20 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
-    <link rel="stylesheet" type="text/css" href="css/heder_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/heder_footer.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive/heder_footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/burger.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header class="container-fluid">
+        <div class="comtainer-1">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                class="profil"
+                src="https://cdn.lordicon.com/xzalkbkz.json"
+                trigger="click"
+                state="hover-jump"
+                colors="primary:#121331,secondary:#000000"
+                style="width:40px;height:40px">
+            </lord-icon>
+            <nav id="list">
+                <ul>
+                  <li><a class="menu-1" href="#">Профіль</a></li>
+                  <li><a class="menu-2" href="#">Налаштування</a></li>
+                  <li><a class="menu-3" href="#">Вийти</a></li>
+                </ul>
+              </nav>
+            <div class="burger">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+            </div>
+        </div>
         <div class="container d-flex"> 
             <nav class="menu"> 
-                <a><img class="burgericon" src="images/hamburger.png" alt="menu" width="25px" height="25px"/></a>             
-                <a href="../map/index.html" class="map">Карта</a>
-                <a href="#" class="profil"><img src="images/User_box1,2x.png" /></a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <img class="tag" src="images/CPU_light.png"></img>
+                        <p class="name">Tag 1</p>
+                    </li>
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        class="location"
+                        src="https://cdn.lordicon.com/surcxhka.json"
+                        trigger="click"
+                        stroke="bold"
+                        state="hover-jump-roll"
+                        colors="primary:#121331,secondary:#000000"
+                        style="width:27px;height:27px">
+                    </lord-icon>
+                </ul>
             </nav>
+            
         </div>
-    </header>
+        <div class="menu-overlay"></div>
+    </header>    
+        
     <main class="container-fluid">
         <div class="container">
             <div class="block1">
@@ -26,6 +66,9 @@
                 </div>
             </div>
         </div>
+        
     </main>
+    <script src="burger.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
